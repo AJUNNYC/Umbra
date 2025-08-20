@@ -97,7 +97,7 @@ The **Feedback Delay Network (FDN)** is the core structure responsible for gener
 
 Using an **orthogonal feedback matrix** ensures the system is **lossless**, meaning energy is preserved inside the network until explicitly attenuated by filters. This allows precise control of decay through attenuation filters and ensures dense diffusion of echoes. In this implementation, a **Hadamard matrix** is used for the feedback structure — it is orthogonal, computationally efficient, and spreads energy evenly across all delay lines.
 
-![Feedback Delay Network Diagram](Docs/images/FDN.png)
+![Feedback Delay Network Diagram](Docs/images/FDN.jpg)
 
 **Mathematical Model:**
 The output sample y(n) of the recursive system for an input x(n) is:
