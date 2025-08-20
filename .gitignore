@@ -1,0 +1,15 @@
+# JUCE builds
+Builds/
+*.exe
+*.dll
+*.app
+*.o
+*.obj
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary/log files
+*.log
+*.tmp
