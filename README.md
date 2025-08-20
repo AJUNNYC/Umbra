@@ -57,8 +57,8 @@
 
 ### Audio Demos
 
-- **Dry Signal:** [Listen](docs/audio/dry.wav)
-- **Wet Signal (Reverb Applied):** [Listen](docs/audio/wet.wav)
+- **Dry Signal:** [Listen](Docs/audio/dry.wav)
+- **Wet Signal (Reverb Applied):** [Listen](Docs/audio/wet.wav)
 
 ## Controls
 
@@ -121,7 +121,7 @@ The **Feedback Delay Network (FDN)** is a method for creating dense, natural-sou
 - **Energy redistribution:** The orthogonal matrix spreads the output of one delay line to all the delay lines, creating a rich and even decay.  
 - **Decay control:** The overall decay rate can be set using a target **reverberation time (T60)**, which is the time it takes for the reverb to decay by 60 dB.
 
-[![FDN Block Diagram](docs/images/FDN.jpg)](docs/images/FDN.jpg)
+[![FDN Block Diagram](Docs/images/FDN.jpg)](Docs/images/FDN.jpg)
 
 
 ### Dark Velvet Noise (DVN)
@@ -156,7 +156,7 @@ The plugin includes a real-time 3D visualization showing frequency content over 
 - **Rendering:** Wireframe display in velvet red with transparency
 - **Performance:** OpenGL with VBO optimization for efficiency
 
-[![Spectrogram Demo](docs/gifs/spectrogram-demo.gif)](docs/gifs/spectrogram-demo.gif)
+[![Spectrogram Demo](Docs/gifs/spectrogram-demo.gif)](Docs/gifs/spectrogram-demo.gif)
 
 ### Performance Optimizations
 
