@@ -143,7 +143,7 @@ y[n] = (1 - ε) * y[n-1] + x[n] - (1 - ε)^M * x[n-M]
 
 Where ε is a small value and M is the pulse length in samples.
 
-[![RRS Filter Block Diagram](docs/images/RRS.png)](docs/images/RRS.png)
+[![RRS Filter Block Diagram](Docs/images/RRS.png)](Docs/images/RRS.png)
 
 
 ### 3D Spectrogram
