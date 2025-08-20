@@ -1,0 +1,5 @@
+# Ignore build folders
+**/Builds
+
+# Ignore generated JUCE library code
+**/JuceLibraryCode
