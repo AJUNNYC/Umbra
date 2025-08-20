@@ -4,7 +4,7 @@
 
 Dark Velvet Noise (DVN) is used in the **early diffusion stage** of the reverb. It extends *Velvet Noise*, which is a sparse sequence of randomly signed impulses (+1 or –1), by giving each pulse a **randomized width** instead of a fixed single sample. This simple change produces a lowpass spectral shaping — removing excess high-frequency content and creating a warmer, more natural character in the early reflections. The density of pulses controls the cutoff frequency of the effective lowpass roll-off.
 
-![DVN Convolver Diagram](docs/images/DVNConvolver.png)
+![DVN Convolver Diagram](Docs/images/DVNConvolver.png)
 
 
 **Mathematical Foundation:**
@@ -32,7 +32,7 @@ The spectral shape of DVN is determined by the rectangular pulses contained in t
 |H(ω)| = (Σ(i=w_min to w_max) |W_i(e^(jω))|) / (w_max - w_min + 1)
 ```
 
-![Rolloff](docs/images/Rolloff.png)
+![Rolloff](Docs/images/Rolloff.png)
 
 where |W_i(e^(jω))| is the magnitude spectrum of the rectangular pulse with width w = i.
 
@@ -54,7 +54,7 @@ The block diagram shows a multi-tap delay line where:
 
 The **RRS filter** efficiently implements the effect of rectangular pulses without performing full convolution. Conceptually, it combines a leaky integrator with a feedforward comb filter. This makes it possible to simulate rectangular pulse responses using only a handful of operations.
 
-![RRS Filter Block Diagram](docs/images/RRS.png)
+![RRS Filter Block Diagram](Docs/images/RRS.png)
 
 **Mathematical Model:**
 The RRS filter implements the difference equation:
@@ -97,7 +97,7 @@ The **Feedback Delay Network (FDN)** is the core structure responsible for gener
 
 Using an **orthogonal feedback matrix** ensures the system is **lossless**, meaning energy is preserved inside the network until explicitly attenuated by filters. This allows precise control of decay through attenuation filters and ensures dense diffusion of echoes. In this implementation, a **Hadamard matrix** is used for the feedback structure — it is orthogonal, computationally efficient, and spreads energy evenly across all delay lines.
 
-![Feedback Delay Network Diagram](docs/images/FDN.png)
+![Feedback Delay Network Diagram](Docs/images/FDN.png)
 
 **Mathematical Model:**
 The output sample y(n) of the recursive system for an input x(n) is:
