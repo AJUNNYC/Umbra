@@ -4,7 +4,7 @@
 
 8-channel reverb audio plugin with real-time 3D spectrogram visualization, implemented in C++ using JUCE.
 
-[![UI Screenshot](docs/images/ui-screenshot.png)](docs/images/ui-screenshot.png)
+[![UI Screenshot](Docs/images/ui-screenshot.png)](Docs/images/ui-screenshot.png)
 
 ## Features
 
